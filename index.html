@@ -29,6 +29,13 @@
   .hstats{margin-left:auto;display:flex;gap:20px;flex-wrap:wrap}
   .hstat .n{font-family:var(--head);font-weight:700;font-size:18px;color:var(--teal);line-height:1}
   .hstat .l{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:#9fb4bd;margin-top:2px}
+  .intro{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);
+    border-radius:10px;padding:15px 18px;margin:18px 0 2px}
+  .intro .eb{font-family:var(--head);font-weight:600;font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+    color:#a8791a;display:block;margin-bottom:6px}
+  .intro p{margin:0;color:#334155;font-size:13px;line-height:1.62;max-width:1000px}
+  .intro p+p{margin-top:8px}
+  .intro b{color:var(--navy);font-weight:600}
   .controls{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:16px 0 6px}
   .controls .grow{flex:1 1 220px}
   input[type=search],select{font-family:var(--sans);font-size:12.5px;color:var(--ink);background:var(--panel);
@@ -125,6 +132,22 @@
 </header>
 
 <div class="wrap">
+  <div class="intro">
+    <span class="eb">Contexto y objetivo</span>
+    <p>Este tablero es el primer MVP del mapa de oferta académica para la <b>Red de Formación Rápida para la
+    Emergencia (FORAEM)</b>, una iniciativa de Benchlab para articular universidades, ONGs, empresas e iglesias
+    capaces de ofrecer módulos cortos y prácticos ante la crisis humanitaria en Venezuela. El objetivo es
+    identificar qué instituciones tienen formación <b>real y activable rápido</b> —cursos, diplomados,
+    especializaciones, tecnologías— en las áreas críticas de la emergencia, para priorizar a quién convocar.</p>
+    <p>Cada URL —detectada a partir del tráfico orgánico hacia sitios académicos (SEMrush)— fue
+    <b>validada una a una contra el contenido real de su página</b>, no solo por su dirección. La pestaña
+    <b>Oferta académica</b> reúne los programas activables (con su nivel, modalidad y duración cuando la página
+    lo indica); <b>Comunicación</b> agrupa el resto de URLs (noticias, repositorios, eventos, documentos y
+    páginas internas) que no son oferta activable. Este MVP cubre <b>Colombia</b> y las familias de
+    <b>Salud y primeros auxilios</b> y <b>Gestión de riesgos y desastres</b>; el método está diseñado para
+    extenderse al resto de áreas temáticas y países.</p>
+  </div>
+
   <div class="controls">
     <div class="grow"><input type="search" id="q" placeholder="Buscar institución, programa o URL…"></div>
     <select id="fpais"><option value="">Todos los países</option><option>Colombia</option></select>
